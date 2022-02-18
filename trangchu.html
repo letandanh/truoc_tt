@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(#d16ba5, #e17497, #eb828b, #ee9183, #eda280, #f1ad7d, #f3b97b, #f3c67b, #f8d273, #fbdf6b, #f9ec64, #f4fb5f)
+}
+
+main {
+  height: 200vmin
+}
+
+h1 {
+  color: white;
+  font-family: system-ui, sans-serif;
+  font-size: 48px;
+  text-align: center
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px
+}
+
+#scrollToTopBtn {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px
+}
+</style>
+<body>
+  <main>
+    <h1>Scroll to Down 👇</h1>
+  </main>
+  <footer>
+    <button id="scrollToTopBtn">☝️</button>
+  </footer>
+  <script>
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+var rootElement = document.documentElement
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
+  </script>
+</body>
+</html>

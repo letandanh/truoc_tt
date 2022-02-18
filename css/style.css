@@ -1,0 +1,604 @@
+body {
+    font-size: 20px;
+    min-height: 1000px;
+    width: 100%;
+  }
+  /* loading */
+  #spinners {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+}
+
+#preloader_1 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#preloader_1 span {
+    display: block;
+    bottom: 0px;
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    animation: preloader_1 1.5s infinite ease-in-out;
+}
+
+#preloader_1 span:nth-child(2) {
+    left: 11px;
+    animation-delay: .2s;
+}
+
+#preloader_1 span:nth-child(3) {
+    left: 22px;
+    animation-delay: .4s;
+}
+
+#preloader_1 span:nth-child(4) {
+    left: 33px;
+    animation-delay: .6s;
+}
+
+#preloader_1 span:nth-child(5) {
+    left: 44px;
+    animation-delay: .8s;
+}
+  @keyframes preloader_1 {
+    0% {
+        height: 5px;
+        transform: translateY(0px);
+        background: #e6a24a;
+    }
+    25% {
+        height: 30px;
+        transform: translateY(15px);
+        background: #cf680a;
+    }
+    50% {
+        height: 5px;
+        transform: translateY(0px);
+        background: #e6a24a;
+    }
+    100% {
+        height: 5px;
+        transform: translateY(0px);
+        background: #cf680a;
+    }
+}
+  /* button top */
+  #myBtn {
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 1;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #da7e29;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+/* timkiem */
+.timkiem{
+  position:absolute;
+  left:75%;
+  top:2%;
+  z-index: 80;
+  color: white;
+}
+.download{
+  color:white;
+  border:1px solid white;
+  padding:5px;
+}
+.timkiem .fa{
+  color: white;
+  margin: 0 10px;
+}
+.timkiem .vnen{
+  color: white;
+  margin: 0 10px;
+}
+.timkiem a:hover{
+  text-decoration: none;
+}
+/* logo */
+#logo{
+  width: 90px;
+  height:90px;
+  left:5%;
+  transition: all linear 0.5s;
+}
+/*hover navbar*/
+/* .nav-item a {
+  color: #fff;
+  transition: all linear .5s;
+  font-weight: 500;
+  font-size: 16px;
+} */
+.navbar{
+  background-color:rgba(0, 0, 0, 0.7)
+}
+.nav-link:hover {
+  color: #da7e29 !important;
+}
+.nav-link{
+  color:white;
+  font-size:16px;
+  z-index: 20;
+}
+
+/*carousel*/
+.carousel-item img{
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	width: auto;
+	z-index: 0;
+  height: 630px;
+}
+.carousel-item p{
+  font-size: 30px;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin-top: 27px;
+  margin-bottom: 60px;
+  line-height: 24px;
+}
+.carousel-item a{
+  margin-bottom:140px;
+  width: 127px;
+  height: 52px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 1.00);
+  border-radius: 5px;
+  color: #da7e29;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all linear .5s;
+  line-height: 52px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.carousel-item a:hover{
+  text-decoration: none;
+  color: #FFFFFF;
+  background: none;
+  border: 1px solid #FFFFFF;
+}
+/* aboutme */
+#aboutme{
+  margin:0 auto;
+  max-width: 948px;
+  height:auto;
+  padding-top:40px;
+}
+#aboutme .kientruc{
+  margin: 0 auto;
+}
+#aboutme h6{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+}
+#aboutme h4{
+  font-size: 30px;
+  margin: 40px 5px;
+  font-family: 'Great Vibes', cursive;
+  transition: all ease-in 0.5s;
+  background: linear-gradient(to right,#da7e29 25%,#B85B14 25%,  #236AB9 50%, #da7e29 25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+#aboutme h4:hover{
+  background-position: 0 100%;
+  /* animation:chuyenmau 5s linear infinite; */
+}
+/* @keyframes chuyenmau {
+  0% {
+    background: linear-gradient(to right,#da7e29 25%,#B85B14 25%,  #236AB9 50%, #da7e29 25%);
+  }
+  100% {
+background: linear-gradient(to right,#da7e29 25%,#B85B14 25%,  #236AB9 50%, #da7e29 25%);
+  }
+} */
+#aboutme p{
+  margin-top:80px;
+  font-family: 'Great Vibes', cursive;
+  line-height: 2;
+  padding:0 15px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  -webkit-line-clamp: 4;
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+}
+.thiet-ke{
+  overflow:hidden;
+  width:100%;
+  position:relative;
+  margin-top: 15px;
+}
+.thiet-ke img{
+  width:100%;
+  height:270px;
+  transition: all linear 0.2s;
+}
+.thiet-ke a{
+  position:absolute;
+  overflow: hidden;
+  width:100%;
+  background-color: #da7e29;
+  color:white;
+  text-decoration: none;
+  bottom:0px;
+  left:0;
+  padding: 10px;
+  font-weight: 500px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.thiet-ke:hover a{
+  color:white;
+  text-decoration: none;
+  bottom:0;
+  left:0;
+  font-size: larger;
+  width:100%;
+  transition: all linear 0.5s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.thiet-ke img:hover{
+  transform:scale(1.05);
+  transition: all linear 0.5s;
+}
+#aboutme button{
+  margin: 30px auto;
+  padding:7px 20px;
+  transition: all linear .5s;
+}
+/* reason */
+#reason{
+  margin:0 auto;
+  max-width: 948px;
+  padding-top:40px;
+}
+#reason h4:hover{
+  background-position: 0 100%;
+}
+#reason h4{
+  font-size: 30px;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  margin-bottom:70px;
+  margin-top:40px;
+  transition: all linear 0.5s;
+  background: linear-gradient(to right,  midnightblue 50%, #da7e29 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 50%;
+  background-position: 100%;
+}
+#reason h6{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  font-weight:bold;
+}
+#reason p{
+  font-family: 'Great Vibes', cursive;
+  line-height:2;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  -webkit-line-clamp: 2;
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+}
+.fas{
+  font-size:25px;
+  color: #da7e29;
+  margin:20px auto;
+}
+.icon a{
+  border:1px solid  #e0e0d1;
+  padding:35px;
+  border-radius: 50%;
+  transition: all linear .5s;
+}
+.icon a:hover {
+  border-color:black;
+  color:black;
+  background-color:#b7b795;
+}
+.icon h6{
+  font-size:12px;
+}
+#reason p{
+  margin-top:60px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+/* sản phẩm nổi bật */
+#pr-featured{
+  margin:0 auto;
+  max-width: 948px;
+  height: auto;
+}
+#pr-featured h4:hover{
+  background-position: 0 100%;
+}
+#pr-featured h4{
+  font-size: 30px;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  margin-bottom:70px;
+  margin-top:20px;
+  transition: all linear 0.5s;
+  background: linear-gradient(to right,  midnightblue 50%, #da7e29 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 50%;
+  background-position: 100%;
+}
+#pr-featured .product{
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top:25px;
+}
+#pr-featured .box{
+  width:100%;
+  display: flex;
+  margin: 0 auto;
+}
+#pr-featured .box img{
+  height: 270px;
+  width:100%;
+  background-color: white;
+  border-radius: 5%;
+  padding:20px;
+  border: 2px solid  #da7e29;
+  cursor:pointer;
+}
+#pr-featured .box h6{
+  font-weight: 600;
+  font-size:12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* dự án của chúng tôi */
+#plant{
+  margin:0 auto;
+  max-width: 948px;
+  height:auto;
+  padding-top:40px;
+}
+#plant .row{
+  margin:0 auto;
+}
+#plant .hinhanh{
+  width: 100%;
+  overflow:hidden;
+  position: relative;
+}
+#plant img{
+  width:100%;
+  height:330px;
+}
+#plant h5{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  text-align:center;
+}
+#plant h4{
+  font-size: 30px;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  margin-bottom:70px;
+  margin-top:20px;
+  transition: all linear 0.5s;
+  background: linear-gradient(to right,  midnightblue 50%, #da7e29 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 50%;
+  background-position: 100%;
+}
+#plant h4:hover{
+  background-position: 0 100%;
+}
+#plant p{
+  padding:50% 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  color:white;
+  text-align: center;
+  transition: all linear .3s;
+  opacity:0;
+  transform: translate3d(20%,0,0);
+}
+#plant h6{  
+  color:white;
+  width:130px;
+  padding:10px 10px 10px 25px;
+  position: absolute;
+  text-decoration: none;
+  border: 2px solid white;
+  transform: translate3d(40%,0,0);
+  opacity: 0;
+}
+#plant .hinhanh:hover{
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
+#plant .hinhanh:hover p{
+  opacity:1;
+  transform: translate3d(0,0,0);
+  transition: transform 0.35s;
+  transition: all linear 0.3s;
+}
+#plant .hinhanh a:hover{
+  text-decoration: none;
+}
+#plant .hinhanh a:hover h6{
+  color:#da7e29;
+  transition: all linear 0.5s;
+}
+#plant .hinhanh:hover h6{
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.637);
+  opacity:1;
+  transform: translate3d(30%,-150%,0);
+  transition: opacity 0.35s, transform 0.35s;
+  transition: all linear 0.3s;
+}
+/* tin tức mới nhất */
+#news{
+  margin:auto;
+  max-width: 948px;
+  height: auto;
+  margin-top: 40px;
+}
+#news .chitiet{
+  width: 100%;
+  margin:auto;
+}
+#news .chitiet .col-sm-5 .card{
+  max-height:520px;
+  margin-bottom: 15px;
+}
+#news .chitiet .col-sm-5 .card p{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  -webkit-line-clamp: 3;
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+}
+#news .chitiet .tintuc .card p{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  -webkit-line-clamp: 3;
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+}
+#news h4:hover{
+  background-position: 0 100%;
+}
+#news h4{
+  font-size: 30px;
+  font-family: 'Great Vibes', cursive;
+  margin-bottom:70px;
+  margin-top:20px;
+  transition: all linear 0.5s;
+  background: linear-gradient(to right, #da7e29 25%, midnightblue 25%, #da7e29 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 50%;
+  background-position: 100%;
+}
+#news h6{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top:40px;
+  font-weight:bold;
+}
+#news button{
+  margin: 35px auto;
+  transition: all linear .3s;
+}
+.tintuc img{
+  width:100%;
+  height:100%;
+}
+/* footer */
+#footer{
+  background-color: black;
+  min-height: 300px;
+  padding-top: 40px;
+  color: white;
+  overflow: hidden;
+}
+#footer .logo2{
+  width: 70px;
+  height:70px;
+}
+#footer .col-sm-6 h4{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+  position: absolute;
+  top:5%;
+  left:17%;
+}
+#footer>fa{
+  margin-top: 5px;
+  font-size: 10px;
+}
+.lienhe{
+  color:white;
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 10px 40px;
+  transition: all linear .5s;
+}
+.lienhe:hover{
+  text-decoration: none;
+  color:#da7e29;
+  background-color: white;
+}
+#footer .thanhphan a{
+  text-align: center;
+  color:white;
+  margin-bottom: 40px;
+}
+#footer .thanhphan a:hover{
+  color:#da7e29;
+  text-decoration: none;
+}
+#footer .thanhphan h6{
+  line-height: 1.6;
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#footer .thanhphan h5{
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  color:#da7e29;
+  margin-top: 40px;
+  font-size:22px;
+}
+.copyright{
+  margin-top: 25px;
+  padding:30px;
+  text-align: center;
+}
+#hr-footer{
+  height:1px;
+  background-color:white;
+}
